@@ -16,10 +16,10 @@ const AndroidSrc = "google-services.json";
 
 module.exports = function(context) {
   for(let platform of context.opts.platforms) {
-    if (platform == "android") {
+    if (platform == "android" &!fs.existsSync(AndroidDestination)) {
       var json = fs.readFileSync(AndroidSrc).toString();
       fs.writeFileSync(AndroidDestination, json);
-    } else if (platform == "ios") {
+    } else if (platform == "ios" &!fs.existsSync(IOSDestination)) {
       var plist = fs.readFileSync(IOSSrc).toString();
       fs.writeFileSync(IOSDestination, plist);
     }
