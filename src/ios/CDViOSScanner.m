@@ -29,8 +29,7 @@
 
 - (void)finishLaunching:(NSNotification *)notification
 {
-  if(![FIRApp defaultApp]){
-    [FIRApp configure];}}
+
 }
 
 
