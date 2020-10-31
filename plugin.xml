@@ -23,7 +23,8 @@
         <framework src="AVFoundation.framework"/>
         <podspec>
             <config>
-                <source url="https://github.com/CocoaPods/Specs.git"/>
+                <!-- source url="https://github.com/CocoaPods/Specs.git"/ -->
+                <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods use-frameworks="false">
                 <pod name="FirebaseMLVision" spec="~> 0.21.0" />
